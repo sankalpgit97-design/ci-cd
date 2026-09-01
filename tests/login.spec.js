@@ -23,4 +23,7 @@ test('Validate login and logout functionality', async ({ page }) => {
 
   const logoutButton = page.locator('text=Log out');
   await expect(logoutButton).toBeVisible();
+
+  await page.context().storageState({path: '.auth/user.json'});
+
 });

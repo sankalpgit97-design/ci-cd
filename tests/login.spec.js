@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const fs = require('fs');
 const path = require('path');
 
-const dataPath = path.join(__dirname, './test-data.json');
+const dataPath = path.join(__dirname, '../data/loginData.json');
 const testData = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 
 test('Validate login and logout functionality', async ({ page }) => {

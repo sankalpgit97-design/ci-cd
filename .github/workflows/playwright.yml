@@ -2,9 +2,9 @@ name: Playwright Login Tests
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [ main, form_branch ]
   pull_request:
-    branches: [ main, master ]
+    branches: [ main, form_branch ]
 
 jobs:
   test:

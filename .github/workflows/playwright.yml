@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main, form_branch ]
   pull_request:
-    branches: [ main, form_branch ]
+    branches: [ form_branch, main ]
 
 jobs:
   test:

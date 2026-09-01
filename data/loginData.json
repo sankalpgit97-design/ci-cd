@@ -1,0 +1,5 @@
+{
+  "url": "https://practicetestautomation.com/practice-test-login/",
+  "expectedUrl": "https://practicetestautomation.com/logged-in-successfully/",
+  "successHeader": "Logged In Successfully"
+}

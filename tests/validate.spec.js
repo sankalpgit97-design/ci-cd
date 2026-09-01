@@ -14,5 +14,5 @@ const logoutButton = page.locator('text=Log out');
 await expect(logoutButton).toBeVisible();
 await logoutButton.click();
 
-await expect(page).toHaveURL(testData.expectedUrl);
+await expect(page).toHaveURL(testData.url);
 });

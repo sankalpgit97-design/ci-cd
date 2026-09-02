@@ -16,7 +16,7 @@ test('Validate login and logout functionality', async ({ page }) => {
   await page.click('#submit');
 
   await page.waitForURL(testData.expectedUrl);
-  expect(page.url()).toBe(testData.expectedUrl);
+  await expect(page.url()).toBe(testData.expectedUrl);
 
   const header = page.locator('.post-title');
   await expect(header).toHaveText(testData.successHeader);
